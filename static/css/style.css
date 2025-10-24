@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo .text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo .small {
+  font-size: 14px;
+  color: #333;
+}
+
+.logo .big {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0070f3;
+}
+
+.logo .tag {
+  background: #ff5050;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-left: 4px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu a:hover {
+  color: #0070f3;
+}
+
+.login-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #005fcc;
+}
+
+
+/* Ảnh banner mấy con thú đọc sách */
+.banner {
+    width: 100%;
+    height: 480px; /* tăng chiều cao lên */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* hoặc thử 'center center' để xem vừa chưa */
+}
+
+
+
+
+
+
