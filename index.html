@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Thư Viện Sách Số</title>
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header class="navbar">
@@ -16,20 +17,18 @@
             </div>
         </div>
         <nav class="menu">
-            <a href="#"><i>🔍</i> Tìm kiếm</a>
-            <a href="#"><i>🧩</i> Học liệu số ▾</a>
-            <a href="#"><i>📚</i> Thư viện cá nhân</a>
+            <a href="search.html"><i>🔍</i> Tìm kiếm</a>
+            <a href="library.html"><i>📚</i> Thư viện cá nhân</a>
             <a href="#"><i>ℹ️</i> Giới thiệu</a>
         </nav>
     </header>
     <section class="banner">
         <img src="static/images/animal-reading.png" alt="Các con thú đang đọc sách">
     </section>
-    
-    <div class="container">
-        <div class="header">
-            <h2>Sách giáo khoa</h2>
-        </div>
+<!-- Phần sách giáo khoa -->  
+    <div class="button-container">
+        <img src="static/images/btn-header.png.png" alt="Nút Sách giáo khoa">
+        <div class="text">Sách giáo khoa</div>
     </div>
 
     <div class="book-section">
@@ -40,7 +39,8 @@
                 <p>Năm xuất bản: 2020</p>
                 <div class="book-stats">
                     <span>👁 1,021</span>
-                    <span>❤️ 1</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
 
@@ -50,7 +50,8 @@
                 <p>Năm xuất bản: 2020</p>
                 <div class="book-stats">
                     <span>👁 629</span>
-                    <span>❤️ 1</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
             
@@ -60,7 +61,8 @@
                 <p>Năm xuất bản: 2020</p>
                 <div class="book-stats">
                     <span>👁 1,345</span>
-                    <span>❤️ 1</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
 
@@ -70,7 +72,8 @@
                 <p>Năm xuất bản: 2020</p>
                 <div class="book-stats">
                     <span>👁 1,145</span>
-                    <span>❤️ 1</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
 
@@ -80,7 +83,8 @@
                 <p>Năm xuất bản: 2020</p>
                 <div class="book-stats">
                     <span>👁 1,500</span>
-                    <span>❤️ 1</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
 
@@ -90,17 +94,79 @@
                 <p>Năm xuất bản: 2020</p>
                 <div class="book-stats">
                     <span>👁 674</span>
-                    <span>❤️ 1</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="highlight-section">
-        <div class="section-title">
-            <h2>Sách nổi bật</h2>
-            <p>Những đầu sách được tìm đọc nhiều nhất trên thư viện. Bạn đừng bỏ lỡ nhé!</p>
-        </div>    
+<!-- Phần sách nỗi bật -->
+     <div class="button-container">
+        <img src="static/images/btn-header.png.png" alt="Nút Sách nổi bật">
+        <div class="text">Sách nổi bật</div>
+    </div>
+
+    <div class="book-section">
+        <div class="books">
+            <div class="book-card">
+                <img src="static/images/Sach-noi-bat/cau-be-chan-cuu.png" alt="Cậu bé chăn cười">
+                <h3>Cậu bé chăn cười</h3>
+                <div class="book-stats">
+                    <span>👁 2,543</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="static/images/Sach-noi-bat/Co-be-lo-lem.png" alt="Cô bé lọ lem">
+                <h3>Cô bé lọ lem</h3>
+                <div class="book-stats">
+                    <span>👁 4,243</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="static/images/Sach-noi-bat/cuoc-song-ben-bo-song.png" alt="Cuộc sống bên bờ sông">
+                <h3>Cuộc sống bên bờ sông</h3>
+                <div class="book-stats">
+                    <span>👁 1,653</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="static/images/Sach-noi-bat/Ngay-va-dem.png" alt="Ngày và đêm">
+                <h3>Ngày và đêm</h3>
+                <div class="book-stats">
+                    <span>👁 3,654</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+            <div class="book-card">
+                <img src="static/images/Sach-noi-bat/o-me-oi-con-het-so-roi.png" alt="Ồ mẹ ơi con hết sợ rồi">
+                <h3>Ồ mẹ ơi con hết sợ rồi</h3>
+                <div class="book-stats">
+                    <span>👁 1,344</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="static/images/Sach-noi-bat/to-co-the-cam-nhan.png" alt="Tớ có thể cảm nhận">
+                <h3>Tớ có thể cảm nhận</h3>
+                <div class="book-stats">
+                    <span>👁 1,967</span>
+                    <button class="favorite-btn" data-book-id="1">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

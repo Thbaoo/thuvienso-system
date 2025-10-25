@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tìm kiếm sách</title>
+  <link rel="stylesheet" href="static/css/search.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="static/images/thuvienso-logo.png" alt="logo">
+      <div class="text">
+        <span class="small">thuvien</span>
+        <span class="big">sachso</span>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">🏠 Trang chủ</a>
+      <a href="search.html">🔍 Tìm kiếm</a>
+      <a href="library.html" style="color:#0070f3;"><i>📚</i> Thư viện cá nhân</a>
+      <a href="#"><i>ℹ️</i> Giới thiệu</a>
+    </nav>
+  </header>
+
+  <section class="search-bar">
+    <h2>Tìm kiếm sách</h2>
+    <input type="text" id="searchInput" placeholder="Nhập tên sách hoặc từ khóa...">
+  </section>
+
+  <section class="search-results" id="resultsContainer">
+    <!-- Kết quả tìm kiếm sẽ hiện ở đây -->
+  </section>
+
+  <script src="static/js/search.js"></script>
+</body>
+</html>

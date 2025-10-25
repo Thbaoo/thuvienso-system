@@ -3,7 +3,7 @@ body {
   font-family: "Inter", sans-serif;
   background: #fff;
 }
-
+/*thanh navbar bên phải*/
 .navbar {
   display: flex;
   align-items: center;
@@ -12,25 +12,19 @@ body {
   border-bottom: 1px solid #eee;
 }
 
+/* phần logo */
 .logo {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .logo img {
   height: 50px;
 }
-
 .logo .text {
   display: flex;
   flex-direction: column;
   line-height: 1;
-}
-
-.logo .small {
-  font-size: 14px;
-  color: #333;
 }
 
 .logo .big {
@@ -39,22 +33,12 @@ body {
   color: #0070f3;
 }
 
-.logo .tag {
-  background: #ff5050;
-  color: white;
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 10px;
-  margin-left: 4px;
-}
-
 /* phần menu */
 .menu {
   display: flex;
   gap: 25px;
   align-items: center;
 }
-
 .menu a {
   text-decoration: none;
   color: #333;
@@ -63,11 +47,45 @@ body {
   align-items: center;
   gap: 5px;
 }
-
 .menu a:hover {
   color: #0070f3;
 }
+/* Ảnh banner mấy con thú đọc sách */
+.banner {
+    width: 100%;
+    height: 480px; /* tăng chiều cao lên */
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* hoặc thử 'center center' để xem vừa chưa */
+}
+/* Phần tiêu đề của sách */
+.button-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
 
+.button-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.button-container .text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    pointer-events: none; /* để click vẫn bấm được vào hình */
+}
 /* Ảnh banner mấy con thú đọc sách */
 .banner {
     width: 100%;
@@ -80,6 +98,30 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center top; /* hoặc thử 'center center' để xem vừa chưa */
+}
+/* Phần tiêu đề của sách */
+.button-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  
+}
+.button-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.button-container .text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    pointer-events: none; /* để click vẫn bấm được vào hình */
 }
 
 /* Phần chứa sách */
@@ -104,7 +146,8 @@ body {
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+/* hiệu ứng hover */
+/* hiệu ứng nổi khi di chuyển chuột đến thẻ book card giúp sinh động hơn */
 .book-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
@@ -126,7 +169,6 @@ body {
     color: #666;
     font-size: 14px;
 }
-
 .book-stats {
     display: flex;
     justify-content: space-between;
@@ -134,16 +176,19 @@ body {
     font-size: 14px;
 }
 
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+  transition: 0.3s;
+}
 
+.favorite-btn:hover {
+  transform: scale(1.2);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.favorite-btn.active {
+  color: #e74c3c; /* màu đỏ khi đã thích */
+}

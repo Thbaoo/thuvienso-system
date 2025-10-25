@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện cá nhân</title>
+  <link rel="stylesheet" href="static/css/library.css">
+</head>
+<body>
+  <!-- Thanh navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="static/images/thuvienso-logo.png" alt="logo">
+      <div class="text">
+        <span class="small">thuvien</span>
+        <span class="big">sachso</span>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="index.html"><i>🏠</i> Trang chủ</a>
+      <a href="search.html"><i>🔍</i> Tìm kiếm</a>
+      <a href="library.html" style="color:#0070f3;"><i>📚</i> Thư viện cá nhân</a>
+      <a href="#"><i>ℹ️</i> Giới thiệu</a>
+    </nav>
+  </header>
+
+  <!-- Phần nội dung -->
+  <section class="personal-library">
+    <h2>📚 Thư viện cá nhân của bạn</h2>
+    <p class="subtitle">Những quyển sách bạn đã ❤️ yêu thích</p>
+
+    <div id="libraryContainer" class="books">
+      <!-- Sách yêu thích sẽ hiển thị ở đây -->
+    </div>
+
+    <div id="emptyMessage" class="empty-message" style="display:none;">
+      <p>Bạn chưa yêu thích quyển sách nào 😢</p>
+      <a href="index.html" class="go-home">⬅ Quay lại trang chủ</a>
+    </div>
+  </section>
+</body>
+</html>

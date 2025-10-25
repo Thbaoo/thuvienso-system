@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #fff;
+}
+/*thanh navbar bên phải*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+/* phần logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo img {
+  height: 50px;
+}
+.logo .text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo .big {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0070f3;
+}
+
+/* phần menu */
+.menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.menu a:hover {
+  color: #0070f3;
+}
+
+/* Phần thanh tìm kiếm */
+.search-bar {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(135deg, #0070f3 0%, #56ccf2 100%);
+  color: white;
+}
+
+.search-bar h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.search-bar input {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Phần hiển thị kết quả */
+.search-results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.search-results .book-card {
+  background: #fff;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-results .book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.search-results .book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.search-results .book-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0 4px;
+}
+
+.search-results .book-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Khi không có kết quả */
+.search-results p {
+  width: 100%;
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 40px;
+}
