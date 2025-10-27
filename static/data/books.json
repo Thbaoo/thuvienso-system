@@ -1,6 +1,15 @@
 [
-  { "title": "Tiếng Việt 1 - Tập một", "year": 2020, "img": "static/images/sgk/Tieng-viet-1-Tap01.png" },
-  { "title": "Toán 1 - Tập một", "year": 2020, "img": "static/images/sgk/Toan-1-Tap01.png" },
-  { "title": "Cô bé lọ lem", "year": 2020, "img": "static/images/Sach-noi-bat/Co-be-lo-lem.png" },
-  { "title": "Cuộc sống bên bờ sông", "year": 2020, "img": "static/images/Sach-noi-bat/cuoc-song-ben-bo-song.png" }
+  { "id": "sgk1", "title": "Tiếng Việt 1 - Tập một", "year": 2020, "img": "static/images/sgk/Tieng-viet-1-Tap01.png" },
+  { "id": "sgk2", "title": "Tiếng Việt 1 - Tập hai", "year": 2020, "img": "static/images/sgk/Tieng-viet-1-Tap02.png" },
+  { "id": "sgk3", "title": "Toán 1 - Tập một", "year": 2020, "img": "static/images/sgk/Toan-1-Tap01.png" },
+  { "id": "sgk4", "title": "Toán 1 - Tập hai", "year": 2020, "img": "static/images/sgk/Toan-1-Tap02.png" },
+  { "id": "sgk5", "title": "Mĩ thuật 1", "year": 2020, "img": "static/images/sgk/Mi-Thuat-01.png" },
+  { "id": "sgk6", "title": "Âm nhạc 1", "year": 2020, "img": "static/images/sgk/Am-Nhac-01.png" },
+
+  { "id": "nb1", "title": "Cô bé lọ lem", "year": 2020, "img": "static/images/Sach-noi-bat/Co-be-lo-lem.png" },
+  { "id": "nb2", "title": "Cuộc sống bên bờ sông", "year": 2020, "img": "static/images/Sach-noi-bat/cuoc-song-ben-bo-song.png" },
+  { "id": "nb3", "title": "Cậu bé chăn cừu", "year": 2020, "img": "static/images/Sach-noi-bat/cau-be-chan-cuu.png" },
+  { "id": "nb4", "title": "Ngày và đêm", "year": 2020, "img": "static/images/Sach-noi-bat/Ngay-va-dem.png" },
+  { "id": "nb5", "title": "Ô mẹ ơi con hết sợ rồi", "year": 2020, "img": "static/images/Sach-noi-bat/o-me-oi-con-het-so-roi.png" },
+  { "id": "nb6", "title": "Tớ có thể cảm nhận", "year": 2020, "img": "static/images/Sach-noi-bat/to-co-the-cam-nhan.png" }
 ]
