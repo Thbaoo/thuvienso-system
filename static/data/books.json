@@ -1,5 +1,5 @@
 [
-  { "id": "sgk1", "title": "Tiếng Việt 1 - Tập một", "year": 2020, "img": "static/images/sgk/Tieng-viet-1-Tap01.png" },
+  { "id": "sgk1", "title": "Tiếng Việt 1 - Tập một", "year": 2020, "img": "static/images/sgk/Tieng-viet-1-Tap01.png","link": "TV1-T1.html" },
   { "id": "sgk2", "title": "Tiếng Việt 1 - Tập hai", "year": 2020, "img": "static/images/sgk/Tieng-viet-1-Tap02.png" },
   { "id": "sgk3", "title": "Toán 1 - Tập một", "year": 2020, "img": "static/images/sgk/Toan-1-Tap01.png" },
   { "id": "sgk4", "title": "Toán 1 - Tập hai", "year": 2020, "img": "static/images/sgk/Toan-1-Tap02.png" },
