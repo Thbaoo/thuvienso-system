@@ -48,14 +48,15 @@ function initFavorites() {
         // Tìm thông tin chi tiết từ dữ liệu JSON
         const book = bookData.find(b => b.id === id);
         if (book) {
-          const newBook = {
-            id: book.id,
-            title: book.title,
-            author: book.author || "Không rõ tác giả",
-            year: book.year || "",
-            image: book.img || "",
-            description: book.description || ""
-          };
+        const newBook = {
+          id: book.id,
+          title: book.title,
+          author: book.author || "Không rõ tác giả",
+          year: book.year || "",
+          image: book.img || "",
+          description: book.description || "",
+          link: book.link || "" // ✅ 
+        };
           libraryBooks.push(newBook);
         }
 
